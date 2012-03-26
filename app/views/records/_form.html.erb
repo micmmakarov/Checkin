@@ -1,0 +1,52 @@
+<%= form_for(@record) do |f| %>
+  <% if @record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@record.errors.count, "error") %> prohibited this record from being saved:</h2>
+
+      <ul>
+      <% @record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.number_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :time %><br />
+    <%= f.time_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </div>
+  <div class="field">
+    <%= f.label :longtitude %><br />
+    <%= f.text_field :longtitude %>
+  </div>
+  <div class="field">
+    <%= f.label :timestamp %><br />
+    <%= f.time_select :timestamp %>
+  </div>
+  <div class="field">
+    <%= f.label :accuracy %><br />
+    <%= f.number_field :accuracy %>
+  </div>
+  <div class="field">
+    <%= f.label :note %><br />
+    <%= f.text_area :note %>
+  </div>
+  <div class="field">
+    <%= f.label :company_id %><br />
+    <%= f.number_field :company_id %>
+  </div>
+  <div class="field">
+    <%= current_user.name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  latitude: 1.5
+  longtitude: 1.5
+  address: MyString
+  note: MyText
+
+two:
+  name: MyString
+  latitude: 1.5
+  longtitude: 1.5
+  address: MyString
+  note: MyText

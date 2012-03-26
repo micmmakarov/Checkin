@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 1
+  time: 2012-03-26 01:08:17
+  latitude: 1.5
+  longtitude: 1.5
+  timestamp: 2012-03-26 01:08:17
+  accuracy: 1
+  note: MyText
+  company: 
+  user: 
+
+two:
+  type: 1
+  time: 2012-03-26 01:08:17
+  latitude: 1.5
+  longtitude: 1.5
+  timestamp: 2012-03-26 01:08:17
+  accuracy: 1
+  note: MyText
+  company: 
+  user: 

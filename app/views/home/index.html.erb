@@ -1,0 +1,8 @@
+<h1>Home#index</h1>
+<p>Yo! Find me in app/views/home/index.html.erb</p>
+
+<% if current_user %>
+Hi, <%= current_user.name %> ( <%= current_user.id %> )
+<% end %>
+
+<%= link_to 'New User', {:controller => 'registrations', :action => 'new', :company_id => 1} %>

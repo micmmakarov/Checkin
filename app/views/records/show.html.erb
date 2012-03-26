@@ -1,0 +1,50 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @record.type %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%= @record.time %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @record.latitude %>
+</p>
+
+<p>
+  <b>Longtitude:</b>
+  <%= @record.longtitude %>
+</p>
+
+<p>
+  <b>Timestamp:</b>
+  <%= @record.timestamp %>
+</p>
+
+<p>
+  <b>Accuracy:</b>
+  <%= @record.accuracy %>
+</p>
+
+<p>
+  <b>Note:</b>
+  <%= @record.note %>
+</p>
+
+<p>
+  <b>Company:</b>
+  <%= @record.company %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @record.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>
